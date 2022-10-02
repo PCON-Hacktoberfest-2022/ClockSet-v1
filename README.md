@@ -9,4 +9,5 @@
 2. Add Column for different Platform 
 3. Change the Time as per IST
 
-
+## To Run this project locally 
+Go to the [CONTRIBUTING.md](https://github.com/PCON-Hacktoberfest-2022/ClockSet-v1/blob/master/CONTRIBUTING.md) file 
