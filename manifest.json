@@ -1,0 +1,20 @@
+{
+    "name": "ClockSet",
+    "version": "0.0.1",
+    "description": "This is a Time Keeper which shows you the Current time and lots of time saving tools",
+    "author": "Akhilesh Kumar Mishra",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_icon": "logo.png"
+    },
+    "icons": {
+        "128": "logo.png"
+    },
+    "permissions": ["storage"],
+    "offline_enabled": true,
+    "background": {
+        "scripts": ["stopwatch.js"],
+        "persistent": false
+    }
+}

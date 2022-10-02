@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #edf2fc;
+  --secondary-color: #000000;
+}
+
+body.dark {
+  --primary-color: black;
+  --secondary-color: #edf2fc;
+}
+
+body.light {
+  --secondary-color: black;
+  --primary-color: #edf2fc;
+}
+
+body {
+  width: 300px;
+  height: 400px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+#span {
+  font-size: 30px;
+  font-family: "Akaya Telivigala", cursive;
+  margin: 10px;
+}
+a{
+  text-decoration: none;
+color: #fff;
+}
+a:hover{
+  color: #000000;
+}
+hr {
+  color: #212ee9;
+}
+
+.but {
+  margin: 5px;
+}
+
+.watch {
+  margin: 20px;
+}
+/* Contest Card */
+#all_contest {
+  background-color: grey;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  margin: 20px;
+  width: auto;
+  height: auto;
+}
+.c_name {
+  font-family: "Akaya Telivigala", cursive;
+}
+.start_time{
+  display:contents;
+  margin: 2rem;
+}
+.end_time{
+  display:contents;
+  margin: 2rem;
+}
+footer {
+  font-size: 12px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
