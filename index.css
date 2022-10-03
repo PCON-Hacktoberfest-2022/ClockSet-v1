@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+
 :root {
   --primary-color: #edf2fc;
   --secondary-color: #000000;
@@ -14,23 +16,49 @@ body.light {
 }
 
 body {
-  width: 300px;
-  height: 400px;
+  height: 100vh;
   background-color: var(--primary-color);
   color: var(--secondary-color);
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Oswald", sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)
+    no-repeat fixed;
+  background-size: 500% 500%;
+  animation: gradient 25s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 #span {
-  font-size: 30px;
-  font-family: "Akaya Telivigala", cursive;
+  font-size: 80px;
+  color: #000000;
+  mix-blend-mode: soft-light;
+  /* font-family: "Akaya Telivigala", cursive; */
+  font-family: inherit;
+  font-weight: bold;
+
   margin: 10px;
 }
-a{
+a {
   text-decoration: none;
-color: #fff;
+  color: #fff;
 }
-a:hover{
+a:hover {
   color: #000000;
 }
 hr {
@@ -45,29 +73,64 @@ hr {
   margin: 20px;
 }
 /* Contest Card */
+#contest {
+  display: flex;
+  align-items: center;
+  justify-content: centre;
+  flex-direction: column;
+}
 #all_contest {
-  background-color: grey;
-  border: 1px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: centre;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.405);
+  backdrop-filter: blur(6px);
+  /* mix-blend-mode: soft-light; */
+  border: 1px solid #00000051;
   border-radius: 8px;
   margin: 20px;
+  padding: 30px;
   width: auto;
   height: auto;
+  font-size: 20px;
+  color: #000000b4;
+  font-weight: 600;
 }
+
 .c_name {
-  font-family: "Akaya Telivigala", cursive;
+  /* font-family: "Akaya Telivigala", cursive; */
+  font-family: inherit;
+  font-size: 25px;
+  text-decoration: underline;
+  padding-bottom: 13px;
 }
-.start_time{
-  display:contents;
-  margin: 2rem;
+.btn {
+  margin-bottom: 10px;
+  opacity: 0.9;
+  transition-duration: 100ms;
 }
-.end_time{
-  display:contents;
+.btn:hover {
+  opacity: 1;
+}
+.btn:active {
+  transform: translate(2px, 2px);
+}
+.start_time {
+  display: contents;
+  margin: 3rem;
+}
+.end_time {
+  display: contents;
   margin: 2rem;
 }
 footer {
-  font-size: 12px;
+  font-size: 23px;
   text-align: center;
-  font-family: "Ubuntu", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
+  font-family: inherit;
   font-weight: 600;
   margin-bottom: 5px;
+  color: #ffffff;
+  mix-blend-mode: soft-light;
 }

@@ -12,7 +12,7 @@ function time() {
   let day = today.toLocaleDateString("en-GB", options);
   span.textContent =
     day +
-    "     " +
+    "    " +
     ("0" + h).substr(-2) +
     ":" +
     ("0" + m).substr(-2) +
