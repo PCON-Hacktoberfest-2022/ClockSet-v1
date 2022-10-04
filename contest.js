@@ -7,9 +7,9 @@ fetch("https://www.kontests.net/api/v1/leet_code")
     let data1 = "";
     compledata.reverse().map((values) => {
       data1 += `<div id="all_contest"><div class="c_name">${values.name}</div>
-        <div class="btn btn-danger"><a href="${values.url}" target="_blank">Contest Link</a></div>
-        <div class="start_time">${datetime_to_indian_format(values.start_time)}</div>
-        <div class="end_time">${datetime_to_indian_format(values.end_time)}</div></div>`;
+        <div class="btn btn-danger"><a href="${values.url}" target="_blank">Contest Link</a></div><br/>
+        <div class="start_time text-light"><b class="text-light">Start Time: </b>${datetime_to_indian_format(values.start_time)}</div><br/>
+        <div class="end_time text-light"><b class="\text-light">End Time: </b>${datetime_to_indian_format(values.end_time)}</div></div>`;
       // let x = `${values.url}`;
       // if (x.includes("codechef")) {
       //   console.log("Yes");
