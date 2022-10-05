@@ -6,7 +6,6 @@ fetch("https://www.kontests.net/api/v1/leet_code")
     return data.json();
   })
   .then((completedata) => {
-    let data1 = "";
     console.log(completedata.reverse())
     for(let i=0;i<completedata.length;i++){
       const title = document.querySelectorAll(".card-title");
@@ -27,22 +26,3 @@ fetch("https://www.kontests.net/api/v1/leet_code")
 // .catch.log((err) => {
 //   console.log(err);
 // });
-function datetime_to_indian_format(datetime){
-  date = new Date(datetime)
-  day = date.getDate()
-  month = date.getMonth()
-  year = date.getFullYear()
-  hour = date.getHours()
-  min = date.getMinutes().toLocaleString('en-US', {
-    minimumIntegerDigits: 2,
-    useGrouping: false
-  })
-  is_am = true
-  if (hour > 12){
-    hour = hour - 12
-  }
-  else if (hour == 0) {
-    hour = 12
-  }
-  return day.toString().concat("/", month.toString(), "/", year.toString(), " ", hour.toString(), ":", min.toString(), " ", (is_am) ? 'AM' : 'PM')
-}

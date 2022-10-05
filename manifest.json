@@ -12,9 +12,5 @@
         "128": "logo.png"
     },
     "permissions": ["storage"],
-    "offline_enabled": true,
-    "background": {
-        "scripts": ["stopwatch.js"],
-        "persistent": false
-    }
+    "offline_enabled": true
 }
