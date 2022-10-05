@@ -34,22 +34,45 @@
   <body>
     <!--dark/light theme switch-->
     <!-- Rounded switch -->
-    <div class="switch">
+    <div class="switch d-flex justify-content-flex-start m-4">
         <label class="switch">
           <input type="checkbox" id="dark-theme-toggler" />
           <span class="slider round"></span>
         </label>
     </div>
     <!-- Live Date & Time -->
-    <span id="span">Loading.....</span>
+    <span id="span" class="d-flex align-items-center justify-content-center">Loading.....</span>
     <hr />
-    <div id="contests" class="d-flex flex-column"></div>
+    <div id="contests" class="d-flex flex-column container">
+      <div class="card mb-2">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"><strong>Event starts at:</strong>  <span id="start-time"></span></p>
+          <p class="card-text"><strong>Event ends at:</strong> <span id="end-time"></span></p>
+          <p class="card-text"><strong>Event starts in</strong> <span id="time-left" class=" text-primary"></span></p>
+          <div class="d-flex justify-content-center">
+           <a href="" class="btn btn-outline-primary btn-lg" id="contest-link" target="_blank">Link</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"><strong>Event starts at:</strong>  <span id="start-time"></span></p>
+          <p class="card-text"><strong>Event ends at:</strong> <span id="end-time"></span></p>
+          <p class="card-text"><strong>Event starts in</strong> <span id="time-left" class=" text-primary"></span></p>
+          <div class="d-flex justify-content-center">
+           <a href="" class="btn btn-outline-primary btn-lg" id="contest-link">Link</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Footer -->
     <footer>
       <div>Made With ❤️ by Akhilesh Kumar Mishra</div>
     </footer>
-    <script src="index.js "></script>
-    <script src="contest.js"></script>
+    <script type="module" src="/index.js "></script>
+    <script  type="module"  src="contest.js"></script>
     <!-- <script src="stopwatch.js"></script> -->
   </body>
 </html>

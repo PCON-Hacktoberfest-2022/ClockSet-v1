@@ -1,3 +1,4 @@
+import moment from './node_modules/moment/dist/moment.js';
 var span = document.getElementById("span");
 function time() {
   let today = new Date();
@@ -10,13 +11,8 @@ function time() {
   let m = today.getMinutes();
   let s = today.getSeconds();
   let day = today.toLocaleDateString("en-GB", options);
-  span.textContent =
-    day +
-    "     " +
-    ("0" + h).substr(-2) +
-    ":" +
-    ("0" + m).substr(-2) +
-    ":" +
-    ("0" + s).substr(-2);
+  span.textContent = `${moment().format("dddd")},${moment().format(
+    "MMMM Do YYYY, h:mm:ss a"
+  )} `;
 }
 setInterval(time, 1000);
