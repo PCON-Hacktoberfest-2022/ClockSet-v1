@@ -24,8 +24,10 @@ fetch("https://www.kontests.net/api/v1/leet_code")
 // });
 function datetime_to_indian_format(datetime){
   date = new Date(datetime)
+  const date = new Date(datetime)
   day = date.getDate()
   month = date.getMonth()
+  month = date.getMonth() + 1
   year = date.getFullYear()
   hour = date.getHours()
   min = date.getMinutes().toLocaleString('en-US', {
