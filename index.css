@@ -2,13 +2,19 @@
   --primary-color-light: #edf2fc;
   --secondary-color-light: #000000;
   --primary-color-dark: black;
-  --secondary-color-light: #edf2fc;
+  --secondary-color-light: #1d2027;
 }
 
 body {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   text-align: center;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
 }
 
 #span {
@@ -16,13 +22,16 @@ body {
   font-family: "Akaya Telivigala", cursive;
   margin: 10px;
 }
+
 a {
   text-decoration: none;
   color: #fff;
 }
+
 a:hover {
   color: #000000;
 }
+
 hr {
   color: #212ee9;
 }
@@ -34,7 +43,12 @@ hr {
 .watch {
   margin: 20px;
 }
+
 /* Contest Card */
+#contests{
+  width: 100%;
+}
+
 #all_contest {
   background-color: grey;
   border: 1px solid #000000;
@@ -43,23 +57,43 @@ hr {
   width: auto;
   height: auto;
 }
+
 .c_name {
   font-family: "Akaya Telivigala", cursive;
 }
+
 .start_time {
   display: contents;
   margin: 2rem;
 }
+
 .end_time {
   display: contents;
   margin: 2rem;
 }
+
 footer {
   font-size: 12px;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
   font-weight: 600;
   margin-bottom: 5px;
+  position: absolute;
+  bottom: 0;
+}
+
+.timer_switch{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 385px) {
+  .timer_switch{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 /*Swich slider*/
@@ -102,15 +136,15 @@ footer {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #2196f3;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #2196f3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -124,6 +158,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
 /*theme switch*/
 :root:has(.switch #dark-theme-toggler:checked) {
   background-color: black;
