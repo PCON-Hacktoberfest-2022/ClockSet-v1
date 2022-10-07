@@ -3,6 +3,7 @@
   --secondary-color-light: #000000;
   --primary-color-dark: black;
   --secondary-color-light: #edf2fc;
+  --border-color-dark: #0D85FE;
 }
 
 body {
@@ -125,7 +126,12 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 /*theme switch*/
-:root:has(.switch #dark-theme-toggler:checked) {
+:root:has(.switch #dark-theme-toggler:checked) body{
   background-color: black;
   color: white;
+}
+
+.card{
+  background-color: inherit;
+  border-color: var(--border-color-dark);
 }
