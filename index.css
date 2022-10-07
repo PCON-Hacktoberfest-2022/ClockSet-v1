@@ -1,10 +1,10 @@
+
 :root {
   --primary-color-light: #edf2fc;
   --secondary-color-light: #000000;
   --primary-color-dark: black;
   --secondary-color-light: #edf2fc;
 }
-
 body {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -45,6 +45,8 @@ hr {
 }
 .c_name {
   font-family: "Akaya Telivigala", cursive;
+  font-size: 1.5rem;
+  padding: 15px 15px;
 }
 .start_time {
   display: contents;
@@ -126,6 +128,10 @@ input:checked + .slider:before {
 }
 /*theme switch*/
 :root:has(.switch #dark-theme-toggler:checked) {
-  background-color: black;
+  background-color: #2e2e2e;
   color: white;
+}
+.contest-img{
+  width: 300px;
+  height: 80px;
 }
