@@ -69,6 +69,7 @@ footer {
   display: inline-block;
   width: 60px;
   height: 34px;
+  left: 12px;
 }
 
 /* Hide default HTML checkbox */
@@ -127,11 +128,30 @@ input:checked + .slider:before {
 }
 /*theme switch*/
 :root:has(.switch #dark-theme-toggler:checked) body{
-  background-color: black;
+  background-color: #2e2e2e;
   color: white;
 }
-
+/* Contest logo*/
+.contest-img{
+  width: 260px;
+  height: 70px;
+  margin-bottom: 15px;
+}
 .card{
   background-color: inherit;
   border-color: var(--border-color-dark);
+}
+.sun-icon{
+  display: inline-block;
+  position: absolute;
+  left :20px;
+  top: 28px;
+  width: 1.5rem;
+}
+.moon-icon{
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left :114px;
+  width: 1.3rem;
 }

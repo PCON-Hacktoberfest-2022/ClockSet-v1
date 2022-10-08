@@ -33,16 +33,21 @@
 
   <body>
     <!--dark/light theme switch-->
+    <div class="icons-modes">
+      <img class="sun-icon" src="images/sun.png" alt="">
     <!-- Rounded switch -->
-    <div class="switch d-flex justify-content-flex-start m-4">
-        <label class="switch">
-          <input type="checkbox" id="dark-theme-toggler" />
-          <span class="slider round"></span>
-        </label>
+      <div class="switch d-flex justify-content-flex-start m-4">
+          <label class="switch">
+            <input type="checkbox" id="dark-theme-toggler" />
+            <span class="slider round"></span>
+          </label>
+      </div>
+      <img class="moon-icon" src="images/moon.png" alt="">
     </div>
     <!-- Live Date & Time -->
     <span id="span" class="d-flex align-items-center justify-content-center">Loading.....</span>
     <hr />
+    <img class="contest-img" src="images/leetcode.png" alt="Leetcode image">
     <div id="contests" class="d-flex flex-column container">
       <div class="card mb-2">
         <div class="card-body">
@@ -67,6 +72,8 @@
         </div>
       </div>
     </div>
+
+    <hr>
     <!-- Footer -->
     <footer>
       <div>Made With ❤️ by Akhilesh Kumar Mishra for hacktoberfest</div>
