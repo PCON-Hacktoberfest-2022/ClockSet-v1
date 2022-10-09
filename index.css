@@ -1,7 +1,7 @@
 :root {
   --primary-color-light: #edf2fc;
   --secondary-color-light: #000000;
-  --primary-color-dark: black;
+  --primary-color-dark: #2e2e2e;
   --secondary-color-light: #edf2fc;
   --border-color-dark: #0D85FE;
 }
@@ -133,8 +133,8 @@ input:checked + .slider:before {
 }
 /* Contest logo*/
 .contest-img{
-  width: 260px;
-  height: 70px;
+  width: 160px;
+  height: 45px;
   margin-bottom: 15px;
 }
 .card{
