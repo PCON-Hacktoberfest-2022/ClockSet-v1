@@ -1,8 +1,9 @@
 :root {
   --primary-color-light: #edf2fc;
   --secondary-color-light: #000000;
-  --primary-color-dark: black;
-  --secondary-color-light: #1d2027;
+  --primary-color-dark: #2e2e2e;
+  --secondary-color-light: #edf2fc;
+  --border-color-dark: #0D85FE;
 }
 
 body {
@@ -102,6 +103,7 @@ footer {
   display: inline-block;
   width: 60px;
   height: 34px;
+  left: 12px;
 }
 
 /* Hide default HTML checkbox */
@@ -160,7 +162,31 @@ input:checked+.slider:before {
 }
 
 /*theme switch*/
-:root:has(.switch #dark-theme-toggler:checked) {
-  background-color: black;
+:root:has(.switch #dark-theme-toggler:checked) body{
+  background-color: #2e2e2e;
   color: white;
+}
+/* Contest logo*/
+.contest-img{
+  width: 160px;
+  height: 45px;
+  margin-bottom: 15px;
+}
+.card{
+  background-color: inherit;
+  border-color: var(--border-color-dark);
+}
+.sun-icon{
+  display: inline-block;
+  position: absolute;
+  left :20px;
+  top: 28px;
+  width: 1.5rem;
+}
+.moon-icon{
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left :114px;
+  width: 1.3rem;
 }
