@@ -1,0 +1,22 @@
+{
+  "name": "clockset-v1",
+  "version": "1.0.0",
+  "description": "1. UI to make it more Clear & Attractive \r 2. Add Column for different Platform \r 3. Change the Time as per IST",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishav981/ClockSet-v1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishav981/ClockSet-v1/issues"
+  },
+  "homepage": "https://github.com/rishav981/ClockSet-v1#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
