@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rishav981/ClockSet-v1.git"
+    "url": "git+https://github.com/Shubham-codes-docs/ClockSet-v1.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rishav981/ClockSet-v1/issues"
+    "url": "https://github.com/Shubham-codes-docs/ClockSet-v1/issues"
   },
-  "homepage": "https://github.com/rishav981/ClockSet-v1#readme",
+  "homepage": "https://github.com/Shubham-codes-docs/ClockSet-v1#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "moment": "^2.29.4"
   }
 }
