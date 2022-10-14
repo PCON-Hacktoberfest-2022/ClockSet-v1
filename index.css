@@ -23,6 +23,7 @@ body {
   font-size: 30px;
   font-family: "Akaya Telivigala", cursive;
   margin: 10px;
+  color: #5498e7;
 }
 a {
   text-decoration: none;
@@ -69,7 +70,7 @@ footer {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   margin-bottom: 5px;
-  background-color: #180A0A;
+  background-color: #5498e7;
 }
 
 .c-link:hover{
@@ -162,6 +163,7 @@ input:checked + .slider:before {
   left :20px;
   top: 28px;
   width: 1.5rem;
+  color: red;
 }
 .moon-icon{
   display: inline-block;
@@ -169,4 +171,5 @@ input:checked + .slider:before {
   top: 30px;
   left :114px;
   width: 1.3rem;
+  color: dimgray;
 }
