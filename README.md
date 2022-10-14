@@ -1,8 +1,8 @@
 # Chrome_Extension
 
-## This Chrome Extension is build to track the time and the Upcoming Contests on different Coding platform 
+## This Chrome Extension is built to track the time and the Upcoming Contests on different Coding platform 
 
-## Currently it has Leetcode only but all the other platform can be linked using Kontest API or the platform's own API.
+## Currently it has Leetcode only but all the other platforms can be linked using Kontest API or the platform's own API.
 
 # The moto of this repo is to make changes in :-
 1. UI to make it more Clear & Attractive 
