@@ -51,3 +51,27 @@ fetch("https://www.kontests.net/api/v1/codeforces")
     }
   }
 );
+
+fetch("https://www.kontests.net/api/v1/code_chef")
+  .then((data) => {
+    return data.json();
+  })
+  .then((completedata) => {
+    console.log(completedata)
+    for(let i=0;i<completedata.length;i++){
+      const title = document.querySelectorAll(".card-title-cc");
+      const duration = document.querySelectorAll("#duration-cc");
+      const startTime = document.querySelectorAll("#start-time-cc");
+      const endTime = document.querySelectorAll("#end-time-cc");
+      const link = document.querySelectorAll("#contest-link-cc");
+      const timeLeft = document.querySelectorAll("#time-left-cc");
+      console.log(title[i]);
+      duration[i].textContent = completedata[i].duration/60+completedata[i].duration%60;
+      title[i].textContent = completedata[i].name;
+      startTime[i].textContent = moment(completedata[i].start_time).format('LLLL');
+      endTime[i].textContent = moment(completedata[i].end_time).format('LLLL');
+      timeLeft[i].textContent = moment(completedata[i].start_time).fromNow();
+      link[i].href = completedata[i].url;
+    }
+  }
+);
