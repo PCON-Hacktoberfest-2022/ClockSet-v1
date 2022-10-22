@@ -59,8 +59,12 @@ fetch("https://www.kontests.net/api/v1/codeforces")
   .then((completedata) => {
     for(let i=0;i<completedata.length;i++){
       let card = document.createElement("div");
-      // TODO: img in card
       var fragment = document.createDocumentFragment();
+      var img = document.createElement('img');
+      img.src = "images/codeforces.png"
+      img.style.height = '45px'
+      img.style.width = '160px'
+      fragment.appendChild(img);
       let title = document.createElement("H5");
       title.innerHTML = 'title:' + completedata[i].name
       fragment.appendChild(title);
@@ -76,12 +80,11 @@ fetch("https://www.kontests.net/api/v1/codeforces")
       let time_left = document.createElement("P");
       time_left.innerHTML = "Event starts ".bold() + moment(completedata[i].start_time).fromNow();
       fragment.appendChild(time_left);
-      let link_text = document.createTextNode("This is link");
-      let link = document.createElement("A");
-      link.appendChild(link_text);
-      console.log(completedata[i].url)
-      link.href = completedata[i].url;
+      let link = document.createElement("a");
+      var linkText = document.createTextNode("Link");
+      link.appendChild(linkText);
       link.title = "Link"
+      link.href = completedata[i].url;
       fragment.appendChild(link);
       card.appendChild(fragment);
       let container = document.querySelector("#container");
