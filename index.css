@@ -3,7 +3,7 @@
   --secondary-color-light: #000000;
   --primary-color-dark: #2e2e2e;
   --secondary-color-light: #edf2fc;
-  --border-color-dark: #0D85FE;
+  --border-color-dark: #0d85fe;
 }
 
 * {
@@ -11,13 +11,11 @@
   padding: 0;
 }
 
-
 body {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   text-align: center;
 }
-
 
 #span {
   font-size: 30px;
@@ -30,7 +28,7 @@ a {
   color: #fff;
 }
 a:hover {
-  color: #000000;
+  color: #d9d3d3;
 }
 hr {
   color: #212ee9;
@@ -64,20 +62,20 @@ hr {
   margin: 2rem;
 }
 footer {
-  font-size: 12px;
+  margin: 20px 0px 0px;
+  padding: 10px;
+  font-size: 10px;
   /* text-align: center; */
-  color: #DCD7C9;
+  color: #dcd7c9;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
-  margin-bottom: 5px;
-  background-color: #5498e7;
+  /* margin-bottom: 5px; */
+  background-color: #072446;
 }
 
-.c-link:hover{
-  color: #ECB365;
+.c-link:hover {
+  color: #ecb365;
 }
-
-
 
 /*Swich slider*/
 .switch {
@@ -96,33 +94,33 @@ footer {
 }
 
 /*theme switch*/
-.DarkMode{
+.DarkMode {
   background-color: #2e2e2e;
   color: white;
 }
 /* Contest logo*/
-.contest-img{
+.contest-img {
   width: 160px;
   height: 45px;
   margin-bottom: 15px;
 }
-.card{
+.card {
   background-color: inherit;
   border-color: var(--border-color-dark);
 }
-.sun-icon{
+.sun-icon {
   display: inline-block;
   position: absolute;
-  left :20px;
+  left: 20px;
   top: 28px;
   width: 1.5rem;
   color: red;
 }
-.moon-icon{
+.moon-icon {
   display: inline-block;
   position: absolute;
   top: 30px;
-  left :114px;
+  left: 114px;
   width: 1.3rem;
   color: dimgray;
 }
