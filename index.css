@@ -12,6 +12,8 @@
 }
 
 body {
+  height: 300px;
+  width: 400px;
   background-color: var(--primary-color);
   color: var(--secondary-color);
   text-align: center;
