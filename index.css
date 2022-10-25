@@ -3,7 +3,7 @@
   --secondary-color-light: #000000;
   --primary-color-dark: #2e2e2e;
   --secondary-color-light: #edf2fc;
-  --border-color-dark: #0d85fe;
+  --border-color-dark: #074e94;
 }
 
 * {
@@ -97,7 +97,7 @@ footer {
 
 /*theme switch*/
 .DarkMode {
-  background-color: #2e2e2e;
+  background-color: #5d5b5b;
   color: white;
 }
 /* Contest logo*/
@@ -116,7 +116,7 @@ footer {
   left: 20px;
   top: 28px;
   width: 1.5rem;
-  color: red;
+  color: rgb(216, 19, 19);
 }
 .moon-icon {
   display: inline-block;
