@@ -72,12 +72,14 @@ git push -u origin <your_branch_name>
 
 ## testing guide (in Chrome browser):
 
-**1.** Switch on developers mode in the chrome browser
+**1.** Switch on developers mode in the chrome browser.
+
 **2.** Visit
     ```
     chrome://extensions/
     ```
-    and load target folder
-**3.** Now you can see the extension being loaded in toolbar.
-**4.** Check in the toolbar and test the extension  
+    and load target folder.
 
+**3.** Now you can see the extension being loaded in toolbar.
+
+**4.** Check in the toolbar and test the extension.
