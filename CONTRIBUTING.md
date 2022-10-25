@@ -69,3 +69,15 @@ git push -u origin <your_branch_name>
 **14.** Click on `Create Pull Request`.
 
 **15.** Voila! You have made a PR to the project. Sit back and relax while your PR is reviewed by the maintainers.
+
+## testing guide (in Chrome browser):
+
+**1.** Switch on developers mode in the chrome browser
+**2.** Visit
+    ```
+    chrome://extensions/
+    ```
+    and load target folder
+**3.** Now you can see the extension being loaded in toolbar.
+**4.** Check in the toolbar and test the extension  
+
