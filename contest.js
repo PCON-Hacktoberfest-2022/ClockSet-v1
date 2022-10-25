@@ -16,9 +16,6 @@ function img_site(site) {
   else if (site == "hacker_earth") {
     return "images/hacker_earth.png";
   }
-  else if (site == "hacker_rank") {
-    return "images/hacker_rank.png";
-  }
   // TODO: a placeholder image
 }
 
@@ -117,12 +114,4 @@ fetch("https://www.kontests.net/api/v1/kick_start")
   })
   .then((completedata) => {
     cards(completedata, "hacker_earth");
-  });
-
-  fetch("https://kontests.net/api/v1/hacker_rank")
-  .then((data) => {
-    return data.json();
-  })
-  .then((completedata) => {
-    cards(completedata, "hacker_rank");
   });
