@@ -35,20 +35,40 @@ function cards(completedata, site) {
     let title = document.createElement("H5");
     title.innerHTML =   completedata[i].name;
     fragment.appendChild(title);
+    const duration_formatter = (dur) =>{
+      let a="", b="", c="";
+      if(dur / 86400 >= 1){
+        a = (Math.floor(dur / 86400)) + " Day";
+        if(Math.floor(dur / 86400)>1) a+="s";
+        a+=" ";
+      }
+      dur %= 86400;
+      if(dur / 3600 >= 1){
+        b = (Math.floor(dur / 3600)) + " Hour";
+        if(Math.floor(dur / 3600) > 1) b+="s";
+        b+=" ";
+      }
+      dur %= 3600;
+      if(dur / 60 >= 1){
+        c = (Math.floor(dur / 60)) + " Minute";
+        if(Math.floor(dur / 60) > 1) c+="s";
+        c+=" ";
+      }
+
+      return a+b+c;
+    }
     let duration = document.createElement("P");
     duration.innerHTML =
-      "Duration:".bold() +
-      completedata[i].duration / 60 +
-      (completedata[i].duration % 60);
+      "Duration: ".bold() + duration_formatter(completedata[i].duration);
     fragment.appendChild(duration);
     let start_time = document.createElement("P");
     start_time.innerHTML =
-      "Event starts at:".bold() +
+      "Event starts at: ".bold() +
       moment(completedata[i].start_time).format("LLLL");
     fragment.appendChild(start_time);
     let end_time = document.createElement("P");
     end_time.innerHTML =
-      "Event ends at:".bold() + moment(completedata[i].end_time).format("LLLL");
+      "Event ends at: ".bold() + moment(completedata[i].end_time).format("LLLL");
     fragment.appendChild(end_time);
     let time_left = document.createElement("P");
     time_left.innerHTML =
