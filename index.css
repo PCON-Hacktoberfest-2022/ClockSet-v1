@@ -13,10 +13,42 @@
 
 body {
   height: 300px;
-  width: 400px;
+
   background-color: var(--primary-color);
   color: var(--secondary-color);
   text-align: center;
+}
+.header {
+  background-color: #3e0d4d;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.header h3 {
+  color: #fcaf3c;
+}
+.dropdown {
+  background-color: #a5c2fe;
+
+  padding: 20px 0px;
+}
+#btn {
+  width: 70px;
+  border: none;
+  padding: 1px 0px;
+  border-radius: 15px;
+  background-color: #3e0d4d;
+  color: #ecb365;
+}
+#btn:hover {
+  background-color: #072446;
+  color: #dcd7c9;
+}
+#contest {
+  border-radius: 5px;
+  width: 150px;
 }
 
 #span {
