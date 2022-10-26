@@ -13,6 +13,9 @@ function img_site(site) {
   else if (site == "kick_start") {
     return "images/kick_start.png";
   }
+  else if (site == "hacker_earth") {
+    return "images/hacker_earth.png";
+  }
   // TODO: a placeholder image
 }
 
@@ -103,4 +106,12 @@ fetch("https://www.kontests.net/api/v1/kick_start")
   })
   .then((completedata) => {
     cards(completedata, "kick_start");
+  });
+
+  fetch("https://www.kontests.net/api/v1/hacker_earth")
+  .then((data) => {
+    return data.json();
+  })
+  .then((completedata) => {
+    cards(completedata, "hacker_earth");
   });
