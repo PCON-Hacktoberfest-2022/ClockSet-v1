@@ -34,41 +34,75 @@
   </head>
 
   <body>
-    <!--dark/light theme switch-->
     <div class="header">
-      <div id="dark-theme-toggler" style="text-align: right; margin-right: 10px;">
-        <button type="button" style="padding: 5px; border-radius: 50px"></button>
-      </div>
+      <div><h3>Time Keeper</h3></div>
       <!-- Live Date & Time -->
       <span id="span" class="d-flex align-items-center justify-content-center"
         >Loading.....</span
       >
+
+      <!--dark/light theme switch-->
+      <div id="dark-theme-toggler" style="text-align: right; margin: 20px">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="blue"
+          class="bi bi-circle-half"
+          viewBox="0 0 16 16"
+        >
+          <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </svg>
+      </div>
     </div>
+
+    <div class="dropdown">
+      <label class="label" for="contest">Choose a Platform : </label>
+      <select id="contest" name="contest">
+        <option value="all">All Contest</option>
+        <option value="cf">Codeforces</option>
+        <option value="cc">CodeChef</option>
+        <option vlaue="at">Atcoder</option>
+        <option value="lc">LeetCode</option>
+        <option value="he">HackerEarth</option>
+        <option value="hr">HackerRank</option>
+        <option value="ks">KickStart</option>
+      </select>
+      <button id="btn">Filter</button>
+    </div>
+
     <hr />
-    <div id="container-leetcode"></div>
+    <div style="display: block" id="container-leetcode"></div>
     <hr />
-    <div id="container-codeforces"></div>
+    <div style="display: block" id="container-codeforces"></div>
     <hr />
-    <div id="container-codechef"></div>
+    <div style="display: block" id="container-codechef"></div>
     <hr />
-    <div id="container-at_coder"></div>
+    <div style="display: block" id="container-at_coder"></div>
     <hr />
-    <div id="container-kick_start"></div>
+    <div style="display: block" id="container-kick_start"></div>
     <hr />
-    <div id="container-hacker_earth"></div>
+    <div style="display: block" id="container-hacker_earth"></div>
     <hr />
-    <div id="container-hacker_rank"></div>
-    <hr>
+    <div style="display: block" id="container-hacker_rank"></div>
+    <hr />
 
     <!-- Footer -->
     <footer class="footer">
       <!-- <div>Made With ❤️ by Akhilesh Kumar Mishra for hacktoberfest</div> -->
       <h4 class="credit">
-        Created With ❤️ by <span><a href="https://linktree.com/iamakhileshmishra">Akhilesh Kumar Mishra</a></span>
+        Created With ❤️ by
+        <span
+          ><a href="https://linktree.com/iamakhileshmishra"
+            >Akhilesh Kumar Mishra</a
+          ></span
+        >
       </h4>
     </footer>
     <script type="module" src="/index.js "></script>
-    <script type="module" src="contest.js"></script>
+    <script type="module" src="contest.js">
+      import filterContest from './contest.js';
+    </script>
     <script src="dark.js"></script>
   </body>
 </html>
