@@ -19,7 +19,10 @@ body {
   text-align: center;
 }
 .header {
+
+
   background-color: black;
+
   height: 100px;
   display: flex;
   align-items: center;
@@ -30,7 +33,7 @@ body {
   color: #fcaf3c;
 }
 .dropdown {
-  background-color: #a5c2fe;
+  background-color: #598bf0;
 
   padding: 20px 0px;
 }
@@ -40,7 +43,7 @@ body {
   padding: 1px 0px;
   border-radius: 15px;
   background-color: #3e0d4d;
-  color: #ecb365;
+  color: #8d580d;
 }
 #btn:hover {
   background-color: #072446;
@@ -53,7 +56,7 @@ body {
 
 #span {
   font-size: 30px;
-  font-family: "Akaya Telivigala", cursive;
+  font-family: 'Akaya Telivigala', cursive;
   margin: 10px;
   color: #5498e7;
 }
@@ -85,7 +88,7 @@ hr {
   height: auto;
 }
 .c_name {
-  font-family: "Akaya Telivigala", cursive;
+  font-family: 'Akaya Telivigala', cursive;
 }
 .start_time {
   display: contents;
@@ -101,7 +104,7 @@ footer {
   font-size: 10px;
   /* text-align: center; */
   color: #dcd7c9;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
   /* margin-bottom: 5px; */
   background-color: #072446;
