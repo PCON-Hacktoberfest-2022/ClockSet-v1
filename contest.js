@@ -1,5 +1,16 @@
 import moment from "./node_modules/moment/dist/moment.js";
 
+
+const sites = [
+  "leetcode",
+  "codeforces",
+  "codechef",
+  "at_coder",
+  "hacker_earth",
+  "hacker_rank",
+  "kick_start"
+]
+
 function img_site(site) {
   if (site == "leetcode") {
     return "images/leetcode.png";
@@ -87,7 +98,24 @@ function cards(completedata, site) {
     container.appendChild(card);
   }
 }
-const allContest = [{}];
+
+function toggleContenstVisibility(site){
+  if (site=="all"){
+    for(let i=0;i<sites.length;i++){
+      document.getElementById("container-" + sites[i]).style.display = "block";
+    }
+  }
+  else{
+    for(let i=0;i<sites.length;i++){
+      if(sites[i]==site){
+        document.getElementById("container-" + sites[i]).style.display = "block";
+      }
+      else{
+        document.getElementById("container-" + sites[i]).style.display = "none";
+      }
+    }
+  }
+}
 
 fetch("https://www.kontests.net/api/v1/leet_code")
   .then((data) => {
@@ -161,72 +189,7 @@ btn.onclick = (e) => {
   e.preventDefault();
   // console.log(sb.value);
   platform = sb.value;
-  console.log(platform);
-  if (platform === "all") {
-    document.getElementById("container-leetcode").style.display = "block";
-    document.getElementById("container-codeforces").style.display = "block";
-    document.getElementById("container-codechef").style.display = "block";
-    document.getElementById("container-at_coder").style.display = "block";
-    document.getElementById("container-hacker_earth").style.display = "block";
-    document.getElementById("container-hacker_rank").style.display = "block";
-    document.getElementById("container-kick_start").style.display = "block";
-  } else if (platform === "lc") {
-    document.getElementById("container-leetcode").style.display = "block";
-    document.getElementById("container-codeforces").style.display = "none";
-    document.getElementById("container-codechef").style.display = "none";
-    document.getElementById("container-at_coder").style.display = "none";
-    document.getElementById("container-hacker_earth").style.display = "none";
-    document.getElementById("container-hacker_rank").style.display = "none";
-    document.getElementById("container-kick_start").style.display = "none";
-  } else if (platform === "cc") {
-    document.getElementById("container-leetcode").style.display = "none";
-    document.getElementById("container-codeforces").style.display = "none";
-    document.getElementById("container-codechef").style.display = "block";
-    document.getElementById("container-at_coder").style.display = "none";
-    document.getElementById("container-hacker_earth").style.display = "none";
-    document.getElementById("container-hacker_rank").style.display = "none";
-    document.getElementById("container-kick_start").style.display = "none";
-  } else if (platform === "cf") {
-    document.getElementById("container-leetcode").style.display = "none";
-    document.getElementById("container-codeforces").style.display = "block";
-    document.getElementById("container-codechef").style.display = "none";
-    document.getElementById("container-at_coder").style.display = "none";
-    document.getElementById("container-hacker_earth").style.display = "none";
-    document.getElementById("container-hacker_rank").style.display = "none";
-    document.getElementById("container-kick_start").style.display = "none";
-  } else if (platform === "Atcoder") {
-    document.getElementById("container-leetcode").style.display = "none";
-    document.getElementById("container-codeforces").style.display = "none";
-    document.getElementById("container-codechef").style.display = "none";
-    document.getElementById("container-at_coder").style.display = "block";
-    document.getElementById("container-hacker_earth").style.display = "none";
-    document.getElementById("container-hacker_rank").style.display = "none";
-    document.getElementById("container-kick_start").style.display = "none";
-  } else if (platform === "he") {
-    document.getElementById("container-leetcode").style.display = "none";
-    document.getElementById("container-codeforces").style.display = "none";
-    document.getElementById("container-codechef").style.display = "none";
-    document.getElementById("container-at_coder").style.display = "none";
-    document.getElementById("container-hacker_earth").style.display = "block";
-    document.getElementById("container-hacker_rank").style.display = "none";
-    document.getElementById("container-kick_start").style.display = "none";
-  } else if (platform === "hr") {
-    document.getElementById("container-leetcode").style.display = "none";
-    document.getElementById("container-codeforces").style.display = "none";
-    document.getElementById("container-codechef").style.display = "none";
-    document.getElementById("container-at_coder").style.display = "none";
-    document.getElementById("container-hacker_earth").style.display = "none";
-    document.getElementById("container-hacker_rank").style.display = "block";
-    document.getElementById("container-kick_start").style.display = "none";
-  } else if (platform === "ks") {
-    document.getElementById("container-leetcode").style.display = "none";
-    document.getElementById("container-codeforces").style.display = "none";
-    document.getElementById("container-codechef").style.display = "none";
-    document.getElementById("container-at_coder").style.display = "none";
-    document.getElementById("container-hacker_earth").style.display = "none";
-    document.getElementById("container-hacker_rank").style.display = "none";
-    document.getElementById("container-kick_start").style.display = "block";
-  }
+  toggleContenstVisibility(platform)
 };
 
 // console.log(allContest);
