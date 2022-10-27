@@ -19,7 +19,10 @@ body {
   text-align: center;
 }
 .header {
-  background-color: #4d0d0d;
+
+
+  background-color: black;
+
   height: 100px;
   display: flex;
   align-items: center;
