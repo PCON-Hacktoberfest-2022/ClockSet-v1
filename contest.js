@@ -170,7 +170,7 @@ btn.onclick = (e) => {
     document.getElementById("container-hacker_earth").style.display = "block";
     document.getElementById("container-hacker_rank").style.display = "block";
     document.getElementById("container-kick_start").style.display = "block";
-  } else if (platform === "lc") {
+  } else if (platform === "leetcode") {
     document.getElementById("container-leetcode").style.display = "block";
     document.getElementById("container-codeforces").style.display = "none";
     document.getElementById("container-codechef").style.display = "none";
@@ -178,7 +178,7 @@ btn.onclick = (e) => {
     document.getElementById("container-hacker_earth").style.display = "none";
     document.getElementById("container-hacker_rank").style.display = "none";
     document.getElementById("container-kick_start").style.display = "none";
-  } else if (platform === "cc") {
+  } else if (platform === "codechef") {
     document.getElementById("container-leetcode").style.display = "none";
     document.getElementById("container-codeforces").style.display = "none";
     document.getElementById("container-codechef").style.display = "block";
@@ -186,7 +186,7 @@ btn.onclick = (e) => {
     document.getElementById("container-hacker_earth").style.display = "none";
     document.getElementById("container-hacker_rank").style.display = "none";
     document.getElementById("container-kick_start").style.display = "none";
-  } else if (platform === "cf") {
+  } else if (platform === "codeforces") {
     document.getElementById("container-leetcode").style.display = "none";
     document.getElementById("container-codeforces").style.display = "block";
     document.getElementById("container-codechef").style.display = "none";
@@ -194,7 +194,7 @@ btn.onclick = (e) => {
     document.getElementById("container-hacker_earth").style.display = "none";
     document.getElementById("container-hacker_rank").style.display = "none";
     document.getElementById("container-kick_start").style.display = "none";
-  } else if (platform === "Atcoder") {
+  } else if (platform === "at_coder") {
     document.getElementById("container-leetcode").style.display = "none";
     document.getElementById("container-codeforces").style.display = "none";
     document.getElementById("container-codechef").style.display = "none";
@@ -202,7 +202,7 @@ btn.onclick = (e) => {
     document.getElementById("container-hacker_earth").style.display = "none";
     document.getElementById("container-hacker_rank").style.display = "none";
     document.getElementById("container-kick_start").style.display = "none";
-  } else if (platform === "he") {
+  } else if (platform === "hacker_earth") {
     document.getElementById("container-leetcode").style.display = "none";
     document.getElementById("container-codeforces").style.display = "none";
     document.getElementById("container-codechef").style.display = "none";
@@ -210,7 +210,7 @@ btn.onclick = (e) => {
     document.getElementById("container-hacker_earth").style.display = "block";
     document.getElementById("container-hacker_rank").style.display = "none";
     document.getElementById("container-kick_start").style.display = "none";
-  } else if (platform === "hr") {
+  } else if (platform === "hacker_rank") {
     document.getElementById("container-leetcode").style.display = "none";
     document.getElementById("container-codeforces").style.display = "none";
     document.getElementById("container-codechef").style.display = "none";
@@ -218,7 +218,7 @@ btn.onclick = (e) => {
     document.getElementById("container-hacker_earth").style.display = "none";
     document.getElementById("container-hacker_rank").style.display = "block";
     document.getElementById("container-kick_start").style.display = "none";
-  } else if (platform === "ks") {
+  } else if (platform === "kick_start") {
     document.getElementById("container-leetcode").style.display = "none";
     document.getElementById("container-codeforces").style.display = "none";
     document.getElementById("container-codechef").style.display = "none";
