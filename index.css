@@ -1,13 +1,13 @@
 :root {
-  --primary-color-light: #edf2fc;
+  --primary-color-light: #92b1ee;
   --secondary-color-light: #130707;
-  --primary-color-dark: #ec9494;
+  --primary-color-dark: #5f4747;
   --secondary-color-light: #edf2fc;
-  --border-color-dark: #92c0ee;
+  --border-color-dark: #3d5d7c;
 }
 
 * {
-  margin: 1rem;
+  margin: 0;
   padding: 0;
 }
 
