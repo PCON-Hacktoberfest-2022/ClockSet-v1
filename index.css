@@ -3,7 +3,7 @@
   --secondary-color-light: #000000;
   --primary-color-dark: #2e2e2e;
   --secondary-color-light: #edf2fc;
-  --border-color-dark: #074e94;
+  --border-color-dark: #92c0ee;
 }
 
 * {
@@ -18,25 +18,29 @@ body {
   color: var(--secondary-color);
   text-align: center;
 }
+
 .header {
 
 
-  background-color: black;
+  background-color: rgb(74, 70, 70);
 
-  height: 100px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
 }
+
 .header h3 {
   color: #fcaf3c;
 }
+
 .dropdown {
   background-color: #598bf0;
 
   padding: 20px 0px;
 }
+
 #btn {
   width: 70px;
   border: none;
@@ -45,10 +49,12 @@ body {
   background-color: #3e0d4d;
   color: #8d580d;
 }
+
 #btn:hover {
   background-color: #072446;
   color: #dcd7c9;
 }
+
 #contest {
   border-radius: 5px;
   width: 150px;
@@ -56,17 +62,21 @@ body {
 
 #span {
   font-size: 30px;
-  font-family: 'Akaya Telivigala', cursive;
+  /* font-family: 's', cursive; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 10px;
   color: #5498e7;
 }
+
 a {
   text-decoration: none;
   color: #fff;
 }
+
 a:hover {
   color: #d9d3d3;
 }
+
 hr {
   color: #212ee9;
 }
@@ -78,6 +88,7 @@ hr {
 .watch {
   margin: 20px;
 }
+
 /* Contest Card */
 #all_contest {
   background-color: grey;
@@ -87,17 +98,21 @@ hr {
   width: auto;
   height: auto;
 }
+
 .c_name {
   font-family: 'Akaya Telivigala', cursive;
 }
+
 .start_time {
   display: contents;
   margin: 2rem;
 }
+
 .end_time {
   display: contents;
   margin: 2rem;
 }
+
 footer {
   margin: 20px 0px 0px;
   padding: 10px;
@@ -135,16 +150,19 @@ footer {
   background-color: #5d5b5b;
   color: white;
 }
+
 /* Contest logo*/
 .contest-img {
   width: 160px;
   height: 45px;
   margin-bottom: 15px;
 }
+
 .card {
   background-color: inherit;
   border-color: var(--border-color-dark);
 }
+
 .sun-icon {
   display: inline-block;
   position: absolute;
@@ -153,6 +171,7 @@ footer {
   width: 1.5rem;
   color: rgb(216, 19, 19);
 }
+
 .moon-icon {
   display: inline-block;
   position: absolute;
