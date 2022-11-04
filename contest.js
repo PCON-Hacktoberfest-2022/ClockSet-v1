@@ -30,6 +30,15 @@ function img_site(site) {
   // TODO: a placeholder image
 }
 
+function sortContestResp(data){
+  // data is list of dict, sort on basis of start_time
+  return data.sort(
+    function(a, b) {
+      return new Date(a.start_time) - new Date(b.start_time)
+    }
+  )
+}
+
 function cards(completedata, site) {
   for (let i = 0; i < completedata.length; i++) {
     let card = document.createElement("div");
@@ -123,9 +132,7 @@ fetch("https://www.kontests.net/api/v1/leet_code")
     return data.json();
   })
   .then((completedata) => {
-    // allContest.push(completedata);
-    // console.log(completedata);
-    cards(completedata, "leetcode");
+    cards(sortContestResp(completedata), "leetcode");
   });
 
 fetch("https://www.kontests.net/api/v1/codeforces")
@@ -134,7 +141,7 @@ fetch("https://www.kontests.net/api/v1/codeforces")
   })
   .then((completedata) => {
     // allContest.push(completedata);
-    cards(completedata, "codeforces");
+    cards(sortContestResp(completedata), "codeforces");
   });
 
 fetch("https://www.kontests.net/api/v1/code_chef")
@@ -143,7 +150,7 @@ fetch("https://www.kontests.net/api/v1/code_chef")
   })
   .then((completedata) => {
     // allContest.push(completedata);
-    cards(completedata, "codechef");
+    cards(sortContestResp(completedata), "codechef");
   });
 
 fetch("https://www.kontests.net/api/v1/at_coder")
@@ -152,7 +159,7 @@ fetch("https://www.kontests.net/api/v1/at_coder")
   })
   .then((completedata) => {
     // allContest.push(completedata);
-    cards(completedata, "at_coder");
+    cards(sortContestResp(completedata), "at_coder");
   });
 
 fetch("https://www.kontests.net/api/v1/kick_start")
@@ -161,7 +168,7 @@ fetch("https://www.kontests.net/api/v1/kick_start")
   })
   .then((completedata) => {
     // allContest.push(completedata);
-    cards(completedata, "kick_start");
+    cards(sortContestResp(completedata), "kick_start");
   });
 
 fetch("https://www.kontests.net/api/v1/hacker_earth")
@@ -170,7 +177,7 @@ fetch("https://www.kontests.net/api/v1/hacker_earth")
   })
   .then((completedata) => {
     // allContest.push(completedata);
-    cards(completedata, "hacker_earth");
+    cards(sortContestResp(completedata), "hacker_earth");
   });
 
 fetch("https://kontests.net/api/v1/hacker_rank")
@@ -179,7 +186,7 @@ fetch("https://kontests.net/api/v1/hacker_rank")
   })
   .then((completedata) => {
     // allContest.push(completedata);
-    cards(completedata, "hacker_rank");
+    cards(sortContestResp(completedata), "hacker_rank");
   });
 
 let platform = "all";
